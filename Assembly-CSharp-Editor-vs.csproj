@@ -97,6 +97,7 @@
      <None Include="Assets\Orthello\Examples\0 - Simple Examples\RotateTowards\-read-me.txt" />
      <None Include="Assets\Orthello\Examples\0 - Simple Examples\Persistance\-read-me.txt" />
      <None Include="Assets\Orthello\Examples\0 - Simple Examples\TextSprites\lorem-rus-utf8.txt" />
+     <None Include="Assets\Sprites\Player.xml" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
