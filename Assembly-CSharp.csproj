@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{E113BB39-8C5C-E852-A9EA-C6546C3ED52D}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_WEBPLAYER;WEBPLUG;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_0_0;UNITY_4_0;ENABLE_PROFILER;UNITY_EDITOR</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\AstarPathfindingProject\Core\AI\AIPath.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\AI\NavmeshController.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\AI\Seeker.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\AstarData.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\AstarMath.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\AstarPath.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\BinaryHeap.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\GraphEditorBase.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\GraphLoaderHistory\AstarSerialize.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\GraphLoaderHistory\AstarSerializer3_01.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\GraphLoaderHistory\AstarSerializer3_04.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\GraphLoaderHistory\AstarSerializer3_05.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\GraphLoaderHistory\AstarSerializer3_07.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\GraphUpdateScene.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\GraphUpdateShape.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Int3.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\JsonConverters.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\JsonSerializer.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\MultithreadClasses.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Node.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\NodeLink.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\astarclasses.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\AIFollow.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\DoorController.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\DynamicGridObstacle.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\MineBotAI.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\ObjectPlacer.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\ShadowAlign.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\TargetMover.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\Base.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\GridGenerator.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\NavMeshGenerator.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\NodeClasses\GridNode.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\NodeClasses\MeshNode.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\PointGenerator.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\Utilities\BBTree.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\Utilities\Huffman.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\Utilities\NavMeshRenderer.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\Utilities\ObjImporter.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Modifiers\AlternativePath.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Modifiers\FunnelModifier.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Modifiers\Modifiers.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Modifiers\RaycastModifier.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Modifiers\SimpleSmoothModifier.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Modifiers\StartEndModifier.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Pathfinders\CleanupPath65K.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Pathfinders\Path.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\AstarProfiler.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\Checksum.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\DotNetReplacements.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\GraphUpdateUtilities.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\LockFreeStack.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\ObjExporter.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\Parallel.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\SizeProfiler.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\UnityReferenceHelper.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\changelog.cs" />
+     <Compile Include="Assets\Orthello\Examples\0 - Simple Examples\(Unity Pro) NavMesh Pathfinding\Agent.cs" />
+     <Compile Include="Assets\Orthello\Examples\0 - Simple Examples\3D integration\App.cs" />
+     <Compile Include="Assets\Orthello\Examples\0 - Simple Examples\3D integration\Arrow.cs" />
+     <Compile Include="Assets\Orthello\Examples\0 - Simple Examples\DragTest\DragTest.cs" />
+     <Compile Include="Assets\Orthello\Examples\0 - Simple Examples\DragTest\DragTestMain.cs" />
+     <Compile Include="Assets\Orthello\Examples\0 - Simple Examples\Multi Resolution Art\MultiResolution.cs" />
+     <Compile Include="Assets\Orthello\Examples\0 - Simple Examples\Persistance\PersistentSprite.cs" />
+     <Compile Include="Assets\Orthello\Examples\0 - Simple Examples\RotateTowards\TestRotateTowards.cs" />
+     <Compile Include="Assets\Orthello\Examples\0 - Simple Examples\TextSprites\OTTextChalc.cs" />
+     <Compile Include="Assets\Orthello\Examples\0 - Simple Examples\TextSprites\OTTextImages.cs" />
+     <Compile Include="Assets\Orthello\Examples\0 - Simple Examples\TextSprites\OTTextPortago.cs" />
+     <Compile Include="Assets\Orthello\Examples\1 - Paralax scrolling FilledSprite\CExample1.cs" />
+     <Compile Include="Assets\Orthello\Examples\2 - Moving collidable sprites\CBlock2.cs" />
+     <Compile Include="Assets\Orthello\Examples\2 - Moving collidable sprites\CExample2.cs" />
+     <Compile Include="Assets\Orthello\Examples\2 - Moving collidable sprites\CStar2.cs" />
+     <Compile Include="Assets\Orthello\Examples\3 - Shooting Asteroids\CAsteroid3.cs" />
+     <Compile Include="Assets\Orthello\Examples\3 - Shooting Asteroids\CBullet3.cs" />
+     <Compile Include="Assets\Orthello\Examples\3 - Shooting Asteroids\CExample3.cs" />
+     <Compile Include="Assets\Orthello\Examples\4 - Follow Target View\CExample4.cs" />
+     <Compile Include="Assets\Orthello\Examples\4 - Follow Target View\CMover4.cs" />
+     <Compile Include="Assets\Orthello\Examples\5 - Creating At Runtime\CExample5.cs" />
+     <Compile Include="Assets\Orthello\Examples\6 - Physics\CExample6.cs" />
+     <Compile Include="Assets\Orthello\Examples\7 - Tweening\CExample7.cs" />
+     <Compile Include="Assets\Orthello\Examples\7 - Tweening\CStar7_1.cs" />
+     <Compile Include="Assets\Orthello\Examples\7 - Tweening\CStar7_2.cs" />
+     <Compile Include="Assets\Orthello\Examples\8 - Prefab-Support\test8.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Animation\OTMovementController.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Graphics\OTView.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Graphics\Sprites\Atlas\OTAtlasData.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Graphics\Sprites\Atlas\OTSpriteAtlas.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Graphics\Sprites\Atlas\OTSpriteAtlasBMFontXml.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Graphics\Sprites\Atlas\OTSpriteAtlasCocos2D.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Graphics\Sprites\Atlas\OTSpriteAtlasCocos2DFnt.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Graphics\Sprites\Atlas\OTSpriteAtlasImport.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Graphics\Sprites\Atlas\OTSpriteAtlasImportText.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Graphics\Sprites\Atlas\OTSpriteAtlasImportXML.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Graphics\Sprites\Atlas\OTSpriteAtlasOGRE.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Graphics\Sprites\Atlas\OTSpriteAtlasSparrow.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Graphics\Sprites\Atlas\OTSpriteAtlasZwoptex.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Graphics\Sprites\OTAnimatingSprite.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Graphics\Sprites\OTAnimatingSpritePassive.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Graphics\Sprites\OTAnimation.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Graphics\Sprites\OTAnimationFrameset.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Graphics\Sprites\OTContainer.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Graphics\Sprites\OTFilledSprite.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Graphics\Sprites\OTGradientSprite.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Graphics\Sprites\OTScale9Sprite.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Graphics\Sprites\OTSprite.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Graphics\Sprites\OTSpriteSheet.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Graphics\Sprites\OTTextSprite.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEase.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseBackIn.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseBackInOut.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseBackOut.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseBounceIn.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseBounceInOut.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseBounceOut.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseCircIn.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseCircInOut.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseCircOut.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseCubicIn.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseCubicInOut.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseCubicOut.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseElasticIn.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseElasticInOut.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseElasticOut.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseExpoIn.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseExpoInOut.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseExpoOut.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseLinear.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseQuadIn.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseQuadInOut.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseQuadOut.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseQuartIn.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseQuartInOut.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseQuartOut.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseQuintIn.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseQuintInOut.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseQuintOut.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseSineIn.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseSineInOut.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseSineOut.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseStrongIn.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseStrongInOut.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEaseStrongOut.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTEasing.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTTween.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\Tweening\OTTweenController.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\_Base\OT.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\_Base\OTController.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\_Base\OTDevTrace.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\_Base\OTMatRef.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\_Base\OTObject.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\_Base\OTObjectType.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\_Base\OTPB.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\_Base\OTSounds.cs" />
+     <Compile Include="Assets\Orthello\Standard Assets\OT\_Base\OTTimeCycle.cs" />
+     <Compile Include="Assets\iTween\Plugins\iTween.cs" />
+     <Compile Include="Assets\iTween\Sample\MoveSample.cs" />
+     <Compile Include="Assets\iTween\Sample\RotateSample.cs" />
+     <Compile Include="Assets\iTween\Sample\SampleInfo.cs" />
+     <Compile Include="Assets\iTweenEditor\Examples\StartAndStopTween.cs" />
+     <Compile Include="Assets\iTweenEditor\Helper Classes\EventParamMappings.cs" />
+     <Compile Include="Assets\iTweenEditor\Helper Classes\Vector3OrTransform.cs" />
+     <Compile Include="Assets\iTweenEditor\Helper Classes\Vector3OrTransformArray.cs" />
+     <Compile Include="Assets\iTweenEditor\iTween.cs" />
+     <Compile Include="Assets\iTweenEditor\iTweenEvent.cs" />
+     <Compile Include="Assets\iTweenEditor\iTweenPath.cs" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
+     <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh2.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
+     <None Include="Assets\Orthello\Examples\0 - Simple Examples\TextSprites\lorem.txt" />
+     <None Include="Assets\Orthello\Examples\0 - Simple Examples\(Unity Pro) NavMesh Pathfinding\read-me-navmesh.txt" />
+     <None Include="Assets\AstarPathfindingProject\Readme_upgrading.txt" />
+     <None Include="Assets\Orthello\Examples\0 - Simple Examples\TextSprites\Atlases\russian.txt" />
+     <None Include="Assets\AstarPathfindingProject\Plugins\DotNetZip\License.txt" />
+     <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
+     <None Include="Assets\AstarPathfindingProject\ExampleScenes\Materials\Projector Multiply.shader" />
+     <None Include="Assets\Orthello\Examples\4 - Follow Target View\-orthello-config.xml" />
+     <None Include="Assets\Orthello\-Read-Me.txt" />
+     <None Include="Assets\AstarPathfindingProject\ExampleScenes\Materials\DiffuseAlwaysVisible.shader" />
+     <None Include="Assets\iTweenEditor\README.txt" />
+     <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.shader" />
+     <None Include="Assets\AstarPathfindingProject\Plugins\dependencies.txt" />
+     <None Include="Assets\AstarPathfindingProject\ExampleScenes\_Example Scenes.txt" />
+     <None Include="Assets\Orthello\-Update-Upgrade info.txt" />
+     <None Include="Assets\Orthello\Examples\0 - Simple Examples\TextSprites\Atlases\img.xml" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
+     <None Include="Assets\Orthello\Examples\0 - Simple Examples\TextSprites\Atlases\glyph.xml" />
+     <None Include="Assets\AstarPathfindingProject\ExampleScenes\Materials\Projector Light.shader" />
+     <None Include="Assets\AstarPathfindingProject\Readme.txt" />
+     <None Include="Assets\AstarPathfindingProject\link.xml" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
+     <None Include="Assets\Orthello\Examples\0 - Simple Examples\TextSprites\Atlases\chalk.xml" />
+     <None Include="Assets\AstarPathfindingProject\Plugins\JsonFx\License.txt" />
+     <None Include="Assets\Orthello\Examples\0 - Simple Examples\Multi Resolution Art\atlas.xml" />
+     <None Include="Assets\AstarPathfindingProject\Plugins\JsonFx\Readme.txt" />
+     <None Include="Assets\Orthello\Standard Assets\OT\_Base\TintedAlpha.shader" />
+     <None Include="Assets\Orthello\Examples\0 - Simple Examples\RotateTowards\-read-me.txt" />
+     <None Include="Assets\Orthello\Examples\0 - Simple Examples\Persistance\-read-me.txt" />
+     <None Include="Assets\Orthello\Examples\0 - Simple Examples\TextSprites\lorem-rus-utf8.txt" />
+ <Reference Include="Ionic.Zip.Reduced">
+ <HintPath>Assets\AstarPathfindingProject\Plugins\DotNetZip\Ionic.Zip.Reduced.dll</HintPath>
+ </Reference>
+ <Reference Include="JsonFx.Json">
+ <HintPath>Assets\AstarPathfindingProject\Plugins\JsonFx\JsonFx.Json.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{5D94FC30-038E-012D-02D7-BB34D625DD56}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{5170EBAF-76AB-B04F-CDBF-57C797C852D1}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
