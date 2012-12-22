@@ -1,9 +1,0 @@
-Because of an export bug in Unity4
-I had to remove the baked navmesh
-
-to bake it again ..
-
-* open scene
-* [Window][Navigation]
-* <Bake> (inspector)
-
