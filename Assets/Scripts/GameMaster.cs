@@ -4,94 +4,84 @@ using System.Collections;
 public class GameMaster : MonoBehaviour
 {
     public static Scoring sc;
+    public LayerMask GroundMask;
+    public LayerMask LadderAndRopeMask;
+    public LayerMask EnemyMask;
 
     public static float orthSize;
     public static float orthSizeX;
     public static float orthSizeY;
     public static float camRatio;
 
-    public static bool blockedRight = false;
-    public static bool blockedLeft = false;
-    public static bool blockedUp = false;
-    public static bool blockedDown = false;
+    public static LayerMask groundMask;
+    public static LayerMask ladderAndRopeMask;
+    public static LayerMask enemyMask;
 
-    public static float playerHitboxX = 0.225f;
-    public static float playerHitboxY = 0.5f;
-    
-    public static bool isLeft;
-    public static bool isRight;
-    public static bool isUp;
-    public static bool isDown;
-    public static bool isShoot;
-    
-    public static bool alive;
-    public static bool onLadder;
-    public static bool onRope;
-    public static bool falling;
-    public static bool shooting;
-
-    public static Facing facingDir = Facing.Left;
-
-    public static Vector3 glx;
+    public void Awake()
+    {
+        groundMask = GroundMask;
+        ladderAndRopeMask = LadderAndRopeMask;
+        enemyMask = EnemyMask;
+    }
 
     void Start ()
     {
+        sc = (Scoring)gameObject.GetComponent("Scoring");
+
         camRatio = 1.333f;
         orthSize = Camera.mainCamera.camera.orthographicSize;
         orthSizeX = orthSize*camRatio;
-
-        sc = (Scoring) gameObject.GetComponent("Scoring");
     }
 
     private void Update()
     {
-        isLeft = false;
-        isRight = false;
-        isUp = false;
-        isDown = false;
-        isShoot = false;
-
-        // keyboard input
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-        {
-            isLeft = true;
-        }
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-        {
-            isRight = true;
-        }
-
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
-        {
-            isUp = true;
-        }
-        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-        {
-            isDown = true;
-        }
-
-        if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.E))
-        {
-            isShoot = true;
-        }
+        
     }
-    public enum Animation
+
+    public static bool IsGroundBetween(Vector3 pos1, Vector3 pos2)
     {
-        None,
-        WalkLeft,
-        WalkRight,
-        RopeLeft,
-        RopeRight,
-        Climb,
-        ClimbStop,
-        StandLeft,
-        StandRight,
-        HangLeft,
-        HangRight,
-        FallLeft,
-        FallRight,
-        ShootLeft,
-        ShootRight
+        pos1.z = 0; pos2.z = 0;
+        return Physics.Linecast(pos1, pos2, groundMask.value);
+    }
+
+    public void OnDrawGizmosSelected()
+    {
+        if (AstarPath.active && AstarPath.active.graphs != null && AstarPath.active.graphs.Length > 0)
+        {
+            MyGridGraph gg = (AstarPath.active.graphs[0] as MyGridGraph);
+
+            if (gg.graphNodes.Length > 0)
+            {
+                for (int y = gg.depth - 1; y >= 0; y--)
+                {
+                    for (int x = 0; x < gg.width; x++)
+                    {
+                        MyGridNode node = gg.graphNodes[y * gg.width + x] as MyGridNode;
+
+                        if (node.isTrueWalkable && node.isFallLane)
+                        {
+                            Gizmos.color = new Color(1, 1, 0, 0.5F);
+
+                            Gizmos.DrawSphere((Vector3)node.position, 0.3f);
+                        }
+
+                        else if (node.isTrueWalkable)
+                        {
+                            Gizmos.color = new Color(0, 1, 0, 0.5F);
+
+                            Gizmos.DrawSphere((Vector3)node.position, 0.3f);
+                        }
+
+                        else if (node.isFallLane)
+                        {
+                            Gizmos.color = new Color(0, 0, 1, 0.5F);
+
+                            Gizmos.DrawSphere((Vector3)node.position, 0.3f);
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

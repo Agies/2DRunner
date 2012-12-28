@@ -1,110 +1,130 @@
 using UnityEngine;
 using System.Collections;
 
-public class PlayerAnims : MonoBehaviour {
+public class PlayerAnims : MonoBehaviour
+{
+    public enum Animation
+    {
+        None,
+        WalkLeft,
+        WalkRight,
+        RopeLeft,
+        RopeRight,
+        Climb,
+        ClimbStop,
+        StandLeft,
+        StandRight,
+        HangLeft,
+        HangRight,
+        FallLeft,
+        FallRight,
+        ShootLeft,
+        ShootRight
+    }
 
-    OTAnimatingSprite _sprite;
-    GameMaster.Animation _currentAnim;
-
-    // Use this for initialization
+    private OTAnimatingSprite _sprite;
+    private Animation _currentAnim;
+    private Character _character;
+    
     void Start()
     {
         _sprite = GetComponent<OTAnimatingSprite>();
+        _character = GetComponent<Character>();
     }
 
     void Update()
     {
         // run left
-        if (GameMaster.isLeft && !GameMaster.onRope && !GameMaster.onLadder && !GameMaster.falling && _currentAnim != GameMaster.Animation.WalkLeft)
+        if (_character.isLeft && !_character.onRope && !_character.onLadder && !_character.falling && _currentAnim != Animation.WalkLeft)
         {
-            _currentAnim = GameMaster.Animation.WalkLeft;
+            _currentAnim = Animation.WalkLeft;
             _sprite.Play("runLeft");
         }
-        if (!GameMaster.isLeft && !GameMaster.onRope && !GameMaster.falling && _currentAnim != GameMaster.Animation.StandLeft && GameMaster.facingDir == Facing.Left)
+        if (!_character.isLeft && !_character.onRope && !_character.falling && _currentAnim != Animation.StandLeft && _character.facingDir == Facing.Left)
         {
-            _currentAnim = GameMaster.Animation.StandLeft;
+            _currentAnim = Animation.StandLeft;
             _sprite.ShowFrame(13); // stand left
         }
 
         // run right
-        if (GameMaster.isRight && !GameMaster.onRope && !GameMaster.onLadder && !GameMaster.falling && _currentAnim != GameMaster.Animation.WalkRight)
+        if (_character.isRight && !_character.onRope && !_character.onLadder && !_character.falling && _currentAnim != Animation.WalkRight)
         {
-            _currentAnim = GameMaster.Animation.WalkRight;
+            _currentAnim = Animation.WalkRight;
             _sprite.Play("runRight");
         }
-        if (!GameMaster.isRight && !GameMaster.onRope && !GameMaster.falling && _currentAnim != GameMaster.Animation.StandRight && GameMaster.facingDir == Facing.Right)
+        if (!_character.isRight && !_character.onRope && !_character.falling && _currentAnim != Animation.StandRight && _character.facingDir == Facing.Right)
         {
-            _currentAnim = GameMaster.Animation.StandRight;
+            _currentAnim = Animation.StandRight;
             _sprite.ShowFrame(16); // stand left
         }
 
         // climb
-        if (GameMaster.isUp && GameMaster.onLadder && _currentAnim != GameMaster.Animation.Climb)
+        if (_character.isUp && _character.onLadder && _currentAnim != Animation.Climb)
         {
-            _currentAnim = GameMaster.Animation.Climb;
+            _currentAnim = Animation.Climb;
             _sprite.Play("climb");
         }
-        if (!GameMaster.isUp && GameMaster.onLadder && _currentAnim != GameMaster.Animation.ClimbStop && GameMaster.facingDir == Facing.Up)
+        if (!_character.isUp && _character.onLadder && _currentAnim != Animation.ClimbStop && _character.facingDir == Facing.Up)
         {
-            _currentAnim = GameMaster.Animation.ClimbStop;
+            _currentAnim = Animation.ClimbStop;
             _sprite.ShowFrame(1); // climb left
         }
 
-        if (GameMaster.isDown && GameMaster.onLadder && _currentAnim != GameMaster.Animation.Climb)
+        if (_character.isDown && _character.onLadder && _currentAnim != Animation.Climb)
         {
-            _currentAnim = GameMaster.Animation.Climb;
+            _currentAnim = Animation.Climb;
             _sprite.Play("climb");
         }
-        if (!GameMaster.isDown && GameMaster.onLadder && _currentAnim != GameMaster.Animation.ClimbStop && GameMaster.facingDir == Facing.Down)
+        if (!_character.isDown && _character.onLadder && _currentAnim != Animation.ClimbStop && _character.facingDir == Facing.Down)
         {
-            _currentAnim = GameMaster.Animation.ClimbStop;
+            _currentAnim = Animation.ClimbStop;
             _sprite.ShowFrame(1); // climb left
         }
 
         // rope
-        if (GameMaster.isLeft && GameMaster.onRope && _currentAnim != GameMaster.Animation.RopeLeft)
+        if (_character.isLeft && _character.onRope && _currentAnim != Animation.RopeLeft)
         {
-            _currentAnim = GameMaster.Animation.RopeLeft;
+            _currentAnim = Animation.RopeLeft;
             _sprite.Play("ropeLeft");
         }
-        if (!GameMaster.isLeft && GameMaster.onRope && _currentAnim != GameMaster.Animation.HangLeft && GameMaster.facingDir == Facing.Left)
+        if (!_character.isLeft && _character.onRope && _currentAnim != Animation.HangLeft && _character.facingDir == Facing.Left)
         {
-            _currentAnim = GameMaster.Animation.HangLeft;
+            _currentAnim = Animation.HangLeft;
             _sprite.ShowFrame(6); // hang left
         }
 
-        if (GameMaster.isRight && GameMaster.onRope && _currentAnim != GameMaster.Animation.RopeRight)
+        if (_character.isRight && _character.onRope && _currentAnim != Animation.RopeRight)
         {
-            _currentAnim = GameMaster.Animation.RopeRight;
+            _currentAnim = Animation.RopeRight;
             _sprite.Play("ropeRight");
         }
-        if (!GameMaster.isRight && GameMaster.onRope && _currentAnim != GameMaster.Animation.HangRight && GameMaster.facingDir == Facing.Right)
+        if (!_character.isRight && _character.onRope && _currentAnim != Animation.HangRight && _character.facingDir == Facing.Right)
         {
-            _currentAnim = GameMaster.Animation.HangRight;
+            _currentAnim = Animation.HangRight;
             _sprite.ShowFrame(9); // hang right
         }
 
         // falling
-        if (GameMaster.falling && _currentAnim != GameMaster.Animation.FallLeft && GameMaster.facingDir == Facing.Left )
+        if (_character.falling && _currentAnim != Animation.FallLeft && _character.facingDir == Facing.Left)
         {
-            _currentAnim = GameMaster.Animation.FallLeft;
+            _currentAnim = Animation.FallLeft;
             _sprite.ShowFrame(2); // fall left
         }
-        if (GameMaster.falling && _currentAnim != GameMaster.Animation.FallRight && GameMaster.facingDir == Facing.Right)
+        if (_character.falling && _currentAnim != Animation.FallRight && _character.facingDir == Facing.Right)
         {
-            _currentAnim = GameMaster.Animation.FallRight;
+            _currentAnim = Animation.FallRight;
             _sprite.ShowFrame(3); // fall right
         }
 
         // shooting
-        if (GameMaster.shooting && _currentAnim != GameMaster.Animation.ShootLeft && GameMaster.facingDir == Facing.Left)
+        if (_character.shooting && _currentAnim != Animation.ShootLeft && _character.facingDir == Facing.Left)
         {
-            _currentAnim = GameMaster.Animation.ShootLeft;
+            _currentAnim = Animation.ShootLeft;
             _sprite.ShowFrame(10); // shoot left
         }
-        if (GameMaster.shooting && _currentAnim != GameMaster.Animation.ShootRight && GameMaster.facingDir == Facing.Right)
+        if (_character.shooting && _currentAnim != Animation.ShootRight && _character.facingDir == Facing.Right)
         {
-            _currentAnim = GameMaster.Animation.ShootRight;
+            _currentAnim = Animation.ShootRight;
             _sprite.ShowFrame(11); // shoot right
         }
     }

@@ -68,6 +68,7 @@
      <Compile Include="Assets\AstarPathfindingProject\Core\astarclasses.cs" />
      <Compile Include="Assets\AstarPathfindingProject\Generators\Base.cs" />
      <Compile Include="Assets\AstarPathfindingProject\Generators\GridGenerator.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\MyGridGraph.cs" />
      <Compile Include="Assets\AstarPathfindingProject\Generators\NavMeshGenerator.cs" />
      <Compile Include="Assets\AstarPathfindingProject\Generators\NodeClasses\GridNode.cs" />
      <Compile Include="Assets\AstarPathfindingProject\Generators\NodeClasses\MeshNode.cs" />
@@ -165,6 +166,9 @@
      <Compile Include="Assets\Orthello\Standard Assets\OT\_Base\OTPB.cs" />
      <Compile Include="Assets\Orthello\Standard Assets\OT\_Base\OTSounds.cs" />
      <Compile Include="Assets\Orthello\Standard Assets\OT\_Base\OTTimeCycle.cs" />
+     <Compile Include="Assets\Scripts\ChangeBehaviorGUI.cs" />
+     <Compile Include="Assets\Scripts\Character.cs" />
+     <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\GameMaster.cs" />
      <Compile Include="Assets\Scripts\Pickup.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />

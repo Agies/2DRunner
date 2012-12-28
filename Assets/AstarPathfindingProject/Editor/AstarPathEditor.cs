@@ -2,6 +2,7 @@
 //#define ProfileAstar //"Enables profiling of the pathfinder. Use the context menu to get log results"
 //#define SingleCoreOptimize
 
+using System.Linq;
 using UnityEngine;
 using UnityEditor;
 using System.Collections;
@@ -2102,10 +2103,10 @@ public class AstarPathEditor : Editor {
 		
 		string debugString = "Graph Types Found\n";
 		//Iterate through the assembly for classes which inherit from GraphEditor
-		foreach (System.Type type in types) {
-			
+        foreach (System.Type type in types)
+        {
 			System.Type baseType = type.BaseType;
-			while (baseType != null) {
+            while (baseType != null) {
 				if (baseType == typeof(GraphEditor)) {
 					
 					System.Object[] att = type.GetCustomAttributes (false);
