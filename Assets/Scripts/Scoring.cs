@@ -20,15 +20,15 @@ public class Scoring : MonoBehaviour
 	
 	private int pickupValue = 250; // pickups will score this many points
 	
-	public Color materialColor = new Color(0.62f, 0f, 0f, 1F); // define our red color to match the level borders
+	public Material materialColor; // define our red color to match the level borders
 	
 	// Use this for initialization
 	void Start () 
 	{
 		// change the color of the interface lables to match the color of the top and bottom borders
-		scoreLabelText.material.color = materialColor;
-		livesLabelText.material.color = materialColor;
-		levelLabelText.material.color = materialColor;
+		scoreLabelText.material.color = materialColor.color;
+        livesLabelText.material.color = materialColor.color;
+        levelLabelText.material.color = materialColor.color;
 		
 		// set lives and levels to initial values and add leading zeroes
 		livesValueText.text = lifeValue.ToString("D3");
