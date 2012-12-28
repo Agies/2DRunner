@@ -3,6 +3,8 @@ using System.Collections;
 
 public class GameMaster : MonoBehaviour
 {
+    public static Scoring sc;
+
     public static float orthSize;
     public static float orthSizeX;
     public static float orthSizeY;
@@ -37,6 +39,8 @@ public class GameMaster : MonoBehaviour
         camRatio = 1.333f;
         orthSize = Camera.mainCamera.camera.orthographicSize;
         orthSizeX = orthSize*camRatio;
+
+        sc = (Scoring) gameObject.GetComponent("Scoring");
     }
 
     private void Update()
@@ -70,9 +74,6 @@ public class GameMaster : MonoBehaviour
         {
             isShoot = true;
         }
-
-        Debug.Log(isLeft + ", " + isRight + ", " + isUp + ", " + isDown);
-        Debug.Log(facingDir);
     }
     public enum Animation
     {
