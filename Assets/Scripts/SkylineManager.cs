@@ -29,7 +29,6 @@ public class RecyclingBlockManager : MonoBehaviour
     protected virtual void Update ()
     {
         var offset = objectQueue.Peek().localPosition.x + recycleOffset;
-        Debug.Log("Offset is " + offset);
         if (offset < Runner.distanceTraveled)
         {
             Recycle();

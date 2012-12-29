@@ -5,6 +5,8 @@ public class Runner : MonoBehaviour {
     private Transform _transform;
     public static float distanceTraveled;
     public float acceleration;
+    public Vector3 jumpVelocity;
+
     private bool touchingPlatform;
     private Rigidbody _rigidBody;
 
@@ -23,6 +25,10 @@ public class Runner : MonoBehaviour {
     // Update is called once per frame
 	void Update ()
 	{
+        if (touchingPlatform && Input.GetButtonDown("Jump"))
+        {
+            _rigidBody.AddForce(jumpVelocity, ForceMode.VelocityChange);
+        }
 	    distanceTraveled = transform.localPosition.x;
         Debug.Log("Distance Traveled " + distanceTraveled);
 	}
