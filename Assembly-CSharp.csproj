@@ -95,6 +95,8 @@
      <Compile Include="Assets\AstarPathfindingProject\Utilities\SizeProfiler.cs" />
      <Compile Include="Assets\AstarPathfindingProject\Utilities\UnityReferenceHelper.cs" />
      <Compile Include="Assets\AstarPathfindingProject\changelog.cs" />
+     <Compile Include="Assets\Managers\Messenger.cs" />
+     <Compile Include="Assets\Managers\MessengerHelper.cs" />
      <Compile Include="Assets\Orthello\Standard Assets\OT\Animation\OTMovementController.cs" />
      <Compile Include="Assets\Orthello\Standard Assets\OT\Graphics\OTView.cs" />
      <Compile Include="Assets\Orthello\Standard Assets\OT\Graphics\Sprites\Atlas\OTAtlasData.cs" />
