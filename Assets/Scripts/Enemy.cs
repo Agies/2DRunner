@@ -48,7 +48,7 @@ public class Enemy : Character {
             bool foundWalkableNode = false;
 
             var gridGraph = (MyGridGraph)AstarPath.active.graphs[0];
-
+            
             int playerNodeRow = PlayerNodeRow();
 
             // Attempt to match vertical height of player
@@ -60,7 +60,11 @@ public class Enemy : Character {
                 for (i = playerNodeRow * gridGraph.width, j = (playerNodeRow + 1) * gridGraph.width;
                     i < j; i++)
                 {
-                    if (gridGraph.myGridNodes[i].walkable && !gridGraph.myGridNodes[i].isFallLane)
+                    if (gridGraph.myGridNodes == null)
+                        Debug.Log("My Nodes is null");
+                    Debug.Log("Number of grid nodes is " + gridGraph.myGridNodes.Length + "i is " + i);
+                    var currentNode = gridGraph.myGridNodes[i];
+                    if (currentNode.walkable && !currentNode.isFallLane)
                     {
                         Vector3 nodePosV3 = (Vector3)gridGraph.nodes[i].position;
                         float dist = Vector3.Distance(characterTransform.position, nodePosV3);

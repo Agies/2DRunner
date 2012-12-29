@@ -48,7 +48,7 @@ public class GameMaster : MonoBehaviour
     {
         if (AstarPath.active && AstarPath.active.graphs != null && AstarPath.active.graphs.Length > 0)
         {
-            MyGridGraph gg = (AstarPath.active.graphs[0] as MyGridGraph);
+            var gg = (MyGridGraph)AstarPath.active.graphs[0];
 
             if (gg.graphNodes.Length > 0)
             {
@@ -56,7 +56,7 @@ public class GameMaster : MonoBehaviour
                 {
                     for (int x = 0; x < gg.width; x++)
                     {
-                        MyGridNode node = gg.graphNodes[y * gg.width + x] as MyGridNode;
+                        var node = (MyGridNode)gg.graphNodes[y * gg.width + x];
 
                         if (node.isTrueWalkable && node.isFallLane)
                         {

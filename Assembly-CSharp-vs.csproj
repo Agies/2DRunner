@@ -171,9 +171,12 @@
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\GameMaster.cs" />
      <Compile Include="Assets\Scripts\Pickup.cs" />
+     <Compile Include="Assets\Scripts\PlatformManager.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\PlayerAnims.cs" />
+     <Compile Include="Assets\Scripts\Runner.cs" />
      <Compile Include="Assets\Scripts\Scoring.cs" />
+     <Compile Include="Assets\Scripts\SkylineManager.cs" />
      <Compile Include="Assets\iTween\Plugins\iTween.cs" />
      <Compile Include="Assets\iTweenEditor\Helper Classes\EventParamMappings.cs" />
      <Compile Include="Assets\iTweenEditor\Helper Classes\Vector3OrTransform.cs" />

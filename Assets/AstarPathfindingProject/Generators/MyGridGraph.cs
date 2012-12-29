@@ -5,22 +5,22 @@ using System.Collections;
 
 public class MyGridGraph : GridGraph, ISerializableGraph
 {
-    public LayerMask levelLayerMask;
     public MyGridNode[] myGridNodes;
+    public LayerMask levelLayerMask;
 
     public MyGridNode[] CreateMyNodes(int number)
     {
-        MyGridNode[] tmp = new MyGridNode[number];
+        var tmp = new MyGridNode[number];
         for (int i = 0; i < number; i++)
         {
             tmp[i] = new MyGridNode();
         }
-        return tmp as MyGridNode[];
+        return tmp;
     }
 
     public override void Scan()
     {
-        AstarPath.OnPostScan += new OnScanDelegate(OnPostScan);
+        AstarPath.OnPostScan += OnPostScan;
 
         scanns++;
 
@@ -39,7 +39,7 @@ public class MyGridGraph : GridGraph, ISerializableGraph
 
         SetUpOffsetsAndCosts();
 
-        int gridIndex = MyGridNode.SetGridGraph(this);
+        int gridIndex = GridNode.SetGridGraph(this);
 
         myGridNodes = CreateMyNodes(width * depth);
         nodes = myGridNodes;
@@ -239,14 +239,14 @@ public class MyGridGraph : GridGraph, ISerializableGraph
 
     // you'll get warnings about hiding inherited methods, because base class does not
     // declare these as virtual
-    public void SerializeSettings(AstarSerializer serializer)
+    public new void SerializeSettings(AstarSerializer serializer)
     {
         base.SerializeSettings(serializer);
         //Save the current values
         serializer.AddValue("levelLayerMask", levelLayerMask.value);
     }
 
-    public void DeSerializeSettings(AstarSerializer serializer)
+    public new void DeSerializeSettings(AstarSerializer serializer)
     {
         base.DeSerializeSettings(serializer);
         levelLayerMask.value = (int)serializer.GetValue("levelLayerMask", typeof(int));
