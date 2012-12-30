@@ -13,11 +13,15 @@ public class PlatformManager : RecyclingBlockManager
     public float maxY;
 
     public PlatformMod[] platforms;
-    private List<PlatformMod> _platforms;
+    public Booster booster;
 
-    void Awake()
+    private List<PlatformMod> _platforms;
+    private Booster _booster;
+
+    protected override void Awake()
     {
-        
+        base.Awake();
+        _booster = (Booster) Instantiate(booster);
     }
 
     protected override void Start()
@@ -37,6 +41,7 @@ public class PlatformManager : RecyclingBlockManager
     protected override void OnRecycle(Transform block, Vector3 scale, Vector3 position)
     {
         base.OnRecycle(block, scale, position);
+        _booster.SpawnIfAvailable(position);
 
         nextPosition += new Vector3(
                 Random.Range(minGap.x, maxGap.x) + scale.x,
@@ -53,7 +58,6 @@ public class PlatformManager : RecyclingBlockManager
 
         var index = Random.Range(0, _platforms.Count);
         var mod = _platforms[index];
-        Debug.Log("Choose platform " + mod.name + " at position " + index);
         block.renderer.material = mod.material;
         block.collider.material = mod.physicMaterial;
     }

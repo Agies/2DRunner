@@ -12,24 +12,41 @@ public class RecyclingBlockManager : MonoBehaviour
     protected Vector3 nextPosition;
     private Queue<Transform> objectQueue;
 
-    protected virtual void Start ()
+    protected virtual void Awake()
     {
-        objectQueue = new Queue<Transform>(numberOfObjects);
-        for (int i = 0; i < numberOfObjects; i++)
-        {
-            objectQueue.Enqueue((Transform)Instantiate(prefab));
-        }
+        Messenger.Default.Register<GameStartMessage>(this, OnGameStart);
+        Messenger.Default.Register<GameOverMessage>(this, OnGameOver);
+    }
+
+    private void OnGameOver(GameOverMessage obj)
+    {
+        enabled = false;
+    }
+
+    protected virtual void OnGameStart(GameStartMessage obj)
+    {
         nextPosition = transform.localPosition;
         for (int i = 0; i < numberOfObjects; i++)
         {
             Recycle();
         }
+        enabled = true;
+    }
+
+    protected virtual void Start ()
+    {
+        objectQueue = new Queue<Transform>(numberOfObjects);
+        for (int i = 0; i < numberOfObjects; i++)
+        {
+            objectQueue.Enqueue((Transform)Instantiate(prefab, new Vector3(0f, 0f, -100f), Quaternion.identity));
+        }
+        enabled = false;
     }
 
     protected virtual void Update ()
     {
         var offset = objectQueue.Peek().localPosition.x + recycleOffset;
-        if (offset < Runner.distanceTraveled)
+        if (offset < Runner.DistanceTraveled)
         {
             Recycle();
         }
