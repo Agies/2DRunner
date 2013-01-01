@@ -11,7 +11,7 @@ public class OTController {
     private static int indexer = 0;
 
     /// <summary>
-    /// this controller runs at this speed (.5f=half speed, 1=normal, 2=twice as fast).
+    /// this controller runs at this direction (.5f=half direction, 1=normal, 2=twice as fast).
     /// </summary>
     public float speed = 1;
     /// <summary>

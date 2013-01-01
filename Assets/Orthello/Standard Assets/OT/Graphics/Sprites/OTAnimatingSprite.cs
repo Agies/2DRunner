@@ -157,7 +157,7 @@ public class OTAnimatingSprite : OTSprite
     }
 
     /// <summary>
-    /// Animation speed
+    /// Animation direction
     /// </summary>
     public float speed
     {

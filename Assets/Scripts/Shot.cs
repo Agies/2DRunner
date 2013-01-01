@@ -3,21 +3,20 @@ using System.Collections;
 
 public class Shot : MonoBehaviour {
     
-    public Vector3 speed;
+    public Vector3 direction;
+    public float speed = 10;
 
-    // Use this for initialization
-	void Start ()
+    void Start ()
 	{
 	    enabled = false;
 	}
 	
-	// Update is called once per frame
 	void Update () {
         if (!enabled) return; 
-        rigidbody.AddForce(speed * 10, ForceMode.Impulse);
+        rigidbody.AddForce(direction * speed, ForceMode.Impulse);
 	}
 
-    public void Shoot(Vector3 shotSpeed)
+    public void Shoot(Vector3 direction)
     {
         rigidbody.velocity = Vector3.zero;
         rigidbody.angularVelocity = Vector3.zero;
@@ -25,13 +24,13 @@ public class Shot : MonoBehaviour {
         rigidbody.inertiaTensor = Vector3.zero;
         rigidbody.isKinematic = true;
         rigidbody.isKinematic = false;
-        speed = shotSpeed;
+        this.direction = direction;
         enabled = true;
     }
 
     void FixedUpdate()
     {
-        if (!enabled) return;
-        //rigidbody.MovePosition(rigidbody.position + speed * 10 * Time.deltaTime);
+        //if (!enabled) return;
+        //rigidbody.MovePosition(rigidbody.position + direction * 10 * Time.deltaTime);
     }
 }

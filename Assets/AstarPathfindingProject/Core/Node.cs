@@ -524,7 +524,7 @@ endif
 		
 		/** Remove connections to unwalkable nodes.
 		 * This function loops through all connections and removes the ones which lead to unwalkable nodes.\n
-		 * This can speed up performance if a lot of nodes have connections to unwalkable nodes, they usually don't though
+		 * This can direction up performance if a lot of nodes have connections to unwalkable nodes, they usually don't though
 		 * \note This function does not add connections which might have been removed previously
 		*/
 		public virtual void UpdateConnections () {

@@ -221,7 +221,7 @@ public class EventParamMappings {
 		mappings[iTweenEvent.TweenType.LookFrom]["looktarget"] = typeof(Vector3OrTransform);
 		mappings[iTweenEvent.TweenType.LookFrom]["axis"] = typeof(string);
 		mappings[iTweenEvent.TweenType.LookFrom]["time"] = typeof(float);
-		mappings[iTweenEvent.TweenType.LookFrom]["speed"] = typeof(float);
+		mappings[iTweenEvent.TweenType.LookFrom]["direction"] = typeof(float);
 		mappings[iTweenEvent.TweenType.LookFrom]["delay"] = typeof(float);
 		mappings[iTweenEvent.TweenType.LookFrom]["easetype"] = typeof(iTween.EaseType);
 		mappings[iTweenEvent.TweenType.LookFrom]["looptype"] = typeof(iTween.LoopType);
@@ -241,7 +241,7 @@ public class EventParamMappings {
 		mappings[iTweenEvent.TweenType.LookTo]["looktarget"] = typeof(Vector3OrTransform);
 		mappings[iTweenEvent.TweenType.LookTo]["axis"] = typeof(string);
 		mappings[iTweenEvent.TweenType.LookTo]["time"] = typeof(float);
-		mappings[iTweenEvent.TweenType.LookTo]["speed"] = typeof(float);
+		mappings[iTweenEvent.TweenType.LookTo]["direction"] = typeof(float);
 		mappings[iTweenEvent.TweenType.LookTo]["delay"] = typeof(float);
 		mappings[iTweenEvent.TweenType.LookTo]["easetype"] = typeof(iTween.EaseType);
 		mappings[iTweenEvent.TweenType.LookTo]["looptype"] = typeof(iTween.LoopType);
@@ -274,7 +274,7 @@ public class EventParamMappings {
 		mappings[iTweenEvent.TweenType.MoveAdd]["axis"] = typeof(string);
 		mappings[iTweenEvent.TweenType.MoveAdd]["space"] = typeof(Space);
 		mappings[iTweenEvent.TweenType.MoveAdd]["time"] = typeof(float);
-		mappings[iTweenEvent.TweenType.MoveAdd]["speed"] = typeof(float);
+		mappings[iTweenEvent.TweenType.MoveAdd]["direction"] = typeof(float);
 		mappings[iTweenEvent.TweenType.MoveAdd]["delay"] = typeof(float);
 		mappings[iTweenEvent.TweenType.MoveAdd]["easetype"] = typeof(iTween.EaseType);
 		mappings[iTweenEvent.TweenType.MoveAdd]["looptype"] = typeof(iTween.LoopType);
@@ -292,7 +292,7 @@ public class EventParamMappings {
 		// MOVE BY
 		mappings.Add(iTweenEvent.TweenType.MoveBy, new Dictionary<string, Type>());
 		mappings[iTweenEvent.TweenType.MoveBy]["time"] = typeof(float);
-		mappings[iTweenEvent.TweenType.MoveBy]["speed"] = typeof(float);
+		mappings[iTweenEvent.TweenType.MoveBy]["direction"] = typeof(float);
 		mappings[iTweenEvent.TweenType.MoveBy]["delay"] = typeof(float);
 		mappings[iTweenEvent.TweenType.MoveBy]["amount"] = typeof(Vector3);
 		mappings[iTweenEvent.TweenType.MoveBy]["x"] = typeof(float);
@@ -331,7 +331,7 @@ public class EventParamMappings {
 		mappings[iTweenEvent.TweenType.MoveFrom]["axis"] = typeof(string);
 		mappings[iTweenEvent.TweenType.MoveFrom]["islocal"] = typeof(bool);
 		mappings[iTweenEvent.TweenType.MoveFrom]["time"] = typeof(float);
-		mappings[iTweenEvent.TweenType.MoveFrom]["speed"] = typeof(float);
+		mappings[iTweenEvent.TweenType.MoveFrom]["direction"] = typeof(float);
 		mappings[iTweenEvent.TweenType.MoveFrom]["delay"] = typeof(float);
 		mappings[iTweenEvent.TweenType.MoveFrom]["easetype"] = typeof(iTween.EaseType);
 		mappings[iTweenEvent.TweenType.MoveFrom]["looptype"] = typeof(iTween.LoopType);
@@ -361,7 +361,7 @@ public class EventParamMappings {
 		mappings[iTweenEvent.TweenType.MoveTo]["axis"] = typeof(string);
 		mappings[iTweenEvent.TweenType.MoveTo]["islocal"] = typeof(bool);
 		mappings[iTweenEvent.TweenType.MoveTo]["time"] = typeof(float);
-		mappings[iTweenEvent.TweenType.MoveTo]["speed"] = typeof(float);
+		mappings[iTweenEvent.TweenType.MoveTo]["direction"] = typeof(float);
 		mappings[iTweenEvent.TweenType.MoveTo]["delay"] = typeof(float);
 		mappings[iTweenEvent.TweenType.MoveTo]["easetype"] = typeof(iTween.EaseType);
 		mappings[iTweenEvent.TweenType.MoveTo]["looptype"] = typeof(iTween.LoopType);
@@ -465,7 +465,7 @@ public class EventParamMappings {
 		mappings[iTweenEvent.TweenType.RotateAdd]["z"] = typeof(float);
 		mappings[iTweenEvent.TweenType.RotateAdd]["space"] = typeof(Space);
 		mappings[iTweenEvent.TweenType.RotateAdd]["time"] = typeof(float);
-		mappings[iTweenEvent.TweenType.RotateAdd]["speed"] = typeof(float);
+		mappings[iTweenEvent.TweenType.RotateAdd]["direction"] = typeof(float);
 		mappings[iTweenEvent.TweenType.RotateAdd]["delay"] = typeof(float);
 		mappings[iTweenEvent.TweenType.RotateAdd]["easetype"] = typeof(iTween.EaseType);
 		mappings[iTweenEvent.TweenType.RotateAdd]["looptype"] = typeof(iTween.LoopType);
@@ -488,7 +488,7 @@ public class EventParamMappings {
 		mappings[iTweenEvent.TweenType.RotateBy]["z"] = typeof(float);
 		mappings[iTweenEvent.TweenType.RotateBy]["space"] = typeof(Space);
 		mappings[iTweenEvent.TweenType.RotateBy]["time"] = typeof(float);
-		mappings[iTweenEvent.TweenType.RotateBy]["speed"] = typeof(float);
+		mappings[iTweenEvent.TweenType.RotateBy]["direction"] = typeof(float);
 		mappings[iTweenEvent.TweenType.RotateBy]["delay"] = typeof(float);
 		mappings[iTweenEvent.TweenType.RotateBy]["easetype"] = typeof(iTween.EaseType);
 		mappings[iTweenEvent.TweenType.RotateBy]["looptype"] = typeof(iTween.LoopType);
@@ -511,7 +511,7 @@ public class EventParamMappings {
 		mappings[iTweenEvent.TweenType.RotateFrom]["z"] = typeof(float);
 		mappings[iTweenEvent.TweenType.RotateFrom]["islocal"] = typeof(bool);
 		mappings[iTweenEvent.TweenType.RotateFrom]["time"] = typeof(float);
-		mappings[iTweenEvent.TweenType.RotateFrom]["speed"] = typeof(float);
+		mappings[iTweenEvent.TweenType.RotateFrom]["direction"] = typeof(float);
 		mappings[iTweenEvent.TweenType.RotateFrom]["delay"] = typeof(float);
 		mappings[iTweenEvent.TweenType.RotateFrom]["easetype"] = typeof(iTween.EaseType);
 		mappings[iTweenEvent.TweenType.RotateFrom]["looptype"] = typeof(iTween.LoopType);
@@ -534,7 +534,7 @@ public class EventParamMappings {
 		mappings[iTweenEvent.TweenType.RotateTo]["z"] = typeof(float);
 		mappings[iTweenEvent.TweenType.RotateTo]["islocal"] = typeof(bool);
 		mappings[iTweenEvent.TweenType.RotateTo]["time"] = typeof(float);
-		mappings[iTweenEvent.TweenType.RotateTo]["speed"] = typeof(float);
+		mappings[iTweenEvent.TweenType.RotateTo]["direction"] = typeof(float);
 		mappings[iTweenEvent.TweenType.RotateTo]["delay"] = typeof(float);
 		mappings[iTweenEvent.TweenType.RotateTo]["easetype"] = typeof(iTween.EaseType);
 		mappings[iTweenEvent.TweenType.RotateTo]["looptype"] = typeof(iTween.LoopType);
@@ -565,7 +565,7 @@ public class EventParamMappings {
 		mappings[iTweenEvent.TweenType.ScaleAdd]["y"] = typeof(float);
 		mappings[iTweenEvent.TweenType.ScaleAdd]["z"] = typeof(float);
 		mappings[iTweenEvent.TweenType.ScaleAdd]["time"] = typeof(float);
-		mappings[iTweenEvent.TweenType.ScaleAdd]["speed"] = typeof(float);
+		mappings[iTweenEvent.TweenType.ScaleAdd]["direction"] = typeof(float);
 		mappings[iTweenEvent.TweenType.ScaleAdd]["delay"] = typeof(float);
 		mappings[iTweenEvent.TweenType.ScaleAdd]["easetype"] = typeof(iTween.EaseType);
 		mappings[iTweenEvent.TweenType.ScaleAdd]["looptype"] = typeof(iTween.LoopType);
@@ -587,7 +587,7 @@ public class EventParamMappings {
 		mappings[iTweenEvent.TweenType.ScaleBy]["y"] = typeof(float);
 		mappings[iTweenEvent.TweenType.ScaleBy]["z"] = typeof(float);
 		mappings[iTweenEvent.TweenType.ScaleBy]["time"] = typeof(float);
-		mappings[iTweenEvent.TweenType.ScaleBy]["speed"] = typeof(float);
+		mappings[iTweenEvent.TweenType.ScaleBy]["direction"] = typeof(float);
 		mappings[iTweenEvent.TweenType.ScaleBy]["delay"] = typeof(float);
 		mappings[iTweenEvent.TweenType.ScaleBy]["easetype"] = typeof(iTween.EaseType);
 		mappings[iTweenEvent.TweenType.ScaleBy]["looptype"] = typeof(iTween.LoopType);
@@ -609,7 +609,7 @@ public class EventParamMappings {
 		mappings[iTweenEvent.TweenType.ScaleFrom]["y"] = typeof(float);
 		mappings[iTweenEvent.TweenType.ScaleFrom]["z"] = typeof(float);
 		mappings[iTweenEvent.TweenType.ScaleFrom]["time"] = typeof(float);
-		mappings[iTweenEvent.TweenType.ScaleFrom]["speed"] = typeof(float);
+		mappings[iTweenEvent.TweenType.ScaleFrom]["direction"] = typeof(float);
 		mappings[iTweenEvent.TweenType.ScaleFrom]["delay"] = typeof(float);
 		mappings[iTweenEvent.TweenType.ScaleFrom]["easetype"] = typeof(iTween.EaseType);
 		mappings[iTweenEvent.TweenType.ScaleFrom]["looptype"] = typeof(iTween.LoopType);
@@ -631,7 +631,7 @@ public class EventParamMappings {
 		mappings[iTweenEvent.TweenType.ScaleTo]["y"] = typeof(float);
 		mappings[iTweenEvent.TweenType.ScaleTo]["z"] = typeof(float);
 		mappings[iTweenEvent.TweenType.ScaleTo]["time"] = typeof(float);
-		mappings[iTweenEvent.TweenType.ScaleTo]["speed"] = typeof(float);
+		mappings[iTweenEvent.TweenType.ScaleTo]["direction"] = typeof(float);
 		mappings[iTweenEvent.TweenType.ScaleTo]["delay"] = typeof(float);
 		mappings[iTweenEvent.TweenType.ScaleTo]["easetype"] = typeof(iTween.EaseType);
 		mappings[iTweenEvent.TweenType.ScaleTo]["looptype"] = typeof(iTween.LoopType);

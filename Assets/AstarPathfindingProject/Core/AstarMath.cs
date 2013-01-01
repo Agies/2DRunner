@@ -1033,7 +1033,7 @@ namespace Pathfinding {
 		}
 		
 		/** Returns the closest point on the triangle. \note Got code from the internet, changed a bit to work with the Unity API
-		  * \todo Uses Dot product to get the sqrMagnitude of a vector, should change to sqrMagnitude for readability and possibly for speed (unlikely though) */
+		  * \todo Uses Dot product to get the sqrMagnitude of a vector, should change to sqrMagnitude for readability and possibly for direction (unlikely though) */
 		public static Vector3 ClosesPointOnTriangle (Vector3 tr0, Vector3 tr1, Vector3 tr2, Vector3 point ) {
 		    Vector3 edge0 = tr1 - tr0;
 		    Vector3 edge1 = tr2 - tr0;

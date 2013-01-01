@@ -1689,7 +1689,7 @@ public class AstarPath : MonoBehaviour {
 			
 			//If we could not aquire all locks, put it in a queue to be called as soon as possible
 			if (max != threadInfos.Length-1) {
-				//To speed up things, the path queue flag is reset and it is flagged that it should not be set until callbacks have been updated
+				//To direction up things, the path queue flag is reset and it is flagged that it should not be set until callbacks have been updated
 				//This will trick the threads to think there is nothing to process and go to sleep (thereby allowing us to update graphs)
 				doSetQueueState = false;
 				pathQueueFlag.Reset();

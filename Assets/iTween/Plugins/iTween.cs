@@ -379,7 +379,7 @@ public class iTweenPlugin : MonoBehaviour{
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will take to complete.
 	/// </param>
 	/// <param name="speed">
-	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on speed (only works with Vector2, Vector3, and Floats)
+	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on direction (only works with Vector2, Vector3, and Floats)
 	/// </param>	
 	/// <param name="delay">
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will wait before beginning.
@@ -1161,7 +1161,7 @@ public class iTweenPlugin : MonoBehaviour{
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will take to complete.
 	/// </param>
 	/// <param name="speed">
-	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on speed
+	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on direction
 	/// </param>
 	/// <param name="delay">
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will wait before beginning.
@@ -1274,7 +1274,7 @@ public class iTweenPlugin : MonoBehaviour{
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will take to complete.
 	/// </param>
 	/// <param name="speed">
-	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on speed
+	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on direction
 	/// </param>
 	/// <param name="delay">
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will wait before beginning.
@@ -1390,7 +1390,7 @@ public class iTweenPlugin : MonoBehaviour{
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will take to complete.
 	/// </param>
 	/// <param name="speed">
-	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on speed
+	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on direction
 	/// </param>
 	/// <param name="delay">
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will wait before beginning.
@@ -1504,7 +1504,7 @@ public class iTweenPlugin : MonoBehaviour{
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will take to complete.
 	/// </param>
 	/// <param name="speed">
-	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on speed
+	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on direction
 	/// </param>
 	/// <param name="delay">
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will wait before beginning.
@@ -1686,7 +1686,7 @@ public class iTweenPlugin : MonoBehaviour{
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will take to complete.
 	/// </param>
 	/// <param name="speed">
-	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on speed
+	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on direction
 	/// </param>
 	/// <param name="delay">
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will wait before beginning.
@@ -1784,7 +1784,7 @@ public class iTweenPlugin : MonoBehaviour{
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will take to complete.
 	/// </param>
 	/// <param name="speed">
-	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on speed
+	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on direction
 	/// </param>
 	/// <param name="delay">
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will wait before beginning.
@@ -1867,7 +1867,7 @@ public class iTweenPlugin : MonoBehaviour{
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will take to complete.
 	/// </param>
 	/// <param name="speed">
-	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on speed
+	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on direction
 	/// </param>
 	/// <param name="delay">
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will wait before beginning.
@@ -1960,7 +1960,7 @@ public class iTweenPlugin : MonoBehaviour{
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will take to complete.
 	/// </param>
 	/// <param name="speed">
-	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on speed
+	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on direction
 	/// </param>
 	/// <param name="delay">
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will wait before beginning.
@@ -2075,7 +2075,7 @@ public class iTweenPlugin : MonoBehaviour{
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will take to complete.
 	/// </param>
 	/// <param name="speed">
-	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on speed
+	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on direction
 	/// </param>
 	/// <param name="delay">
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will wait before beginning.
@@ -2158,7 +2158,7 @@ public class iTweenPlugin : MonoBehaviour{
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will take to complete.
 	/// </param>
 	/// <param name="speed">
-	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on speed
+	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on direction
 	/// </param>
 	/// <param name="delay">
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will wait before beginning.
@@ -2244,7 +2244,7 @@ public class iTweenPlugin : MonoBehaviour{
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will take to complete.
 	/// </param>
 	/// <param name="speed">
-	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on speed
+	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on direction
 	/// </param>
 	/// <param name="delay">
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will wait before beginning.
@@ -2340,7 +2340,7 @@ public class iTweenPlugin : MonoBehaviour{
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will take to complete.
 	/// </param>
 	/// <param name="speed">
-	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on speed
+	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on direction
 	/// </param>
 	/// <param name="delay">
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will wait before beginning.
@@ -2474,7 +2474,7 @@ public class iTweenPlugin : MonoBehaviour{
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will take to complete.
 	/// </param>
 	/// <param name="speed">
-	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on speed
+	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on direction
 	/// </param>
 	/// <param name="delay">
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will wait before beginning.
@@ -2563,7 +2563,7 @@ public class iTweenPlugin : MonoBehaviour{
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will take to complete.
 	/// </param>
 	/// <param name="speed">
-	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on speed
+	/// A <see cref="System.Single"/> or <see cref="System.Double"/> can be used instead of time to allow animation based on direction
 	/// </param>
 	/// <param name="delay">
 	/// A <see cref="System.Single"/> or <see cref="System.Double"/> for the time in seconds the animation will wait before beginning.
@@ -3278,10 +3278,10 @@ public class iTweenPlugin : MonoBehaviour{
 		vector3s[0]=(Vector3)tweenArguments["from"];
 		vector3s[1]=(Vector3)tweenArguments["to"];
 		
-		//need for speed?
-		if(tweenArguments.Contains("speed")){
+		//need for direction?
+		if(tweenArguments.Contains("direction")){
 			float distance = Math.Abs(Vector3.Distance(vector3s[0],vector3s[1]));
-			time = distance/(float)tweenArguments["speed"];
+			time = distance/(float)tweenArguments["direction"];
 		}
 	}
 	
@@ -3293,12 +3293,12 @@ public class iTweenPlugin : MonoBehaviour{
 		vector2s[0]=(Vector2)tweenArguments["from"];
 		vector2s[1]=(Vector2)tweenArguments["to"];
 		
-		//need for speed?
-		if(tweenArguments.Contains("speed")){
+		//need for direction?
+		if(tweenArguments.Contains("direction")){
 			Vector3 fromV3 = new Vector3(vector2s[0].x,vector2s[0].y,0);
 			Vector3 toV3 = new Vector3(vector2s[1].x,vector2s[1].y,0);
 			float distance = Math.Abs(Vector3.Distance(fromV3,toV3));
-			time = distance/(float)tweenArguments["speed"];
+			time = distance/(float)tweenArguments["direction"];
 		}
 	}
 	
@@ -3310,10 +3310,10 @@ public class iTweenPlugin : MonoBehaviour{
 		floats[0]=(float)tweenArguments["from"];
 		floats[1]=(float)tweenArguments["to"];
 		
-		//need for speed?
-		if(tweenArguments.Contains("speed")){
+		//need for direction?
+		if(tweenArguments.Contains("direction")){
 			float distance = Math.Abs(floats[0] - floats[1]);
-			time = distance/(float)tweenArguments["speed"];
+			time = distance/(float)tweenArguments["direction"];
 		}
 	}
 		
@@ -3495,10 +3495,10 @@ public class iTweenPlugin : MonoBehaviour{
 		//shortest distance:
 		vector3s[1]=new Vector3(clerp(vector3s[0].x,vector3s[1].x,1),clerp(vector3s[0].y,vector3s[1].y,1),clerp(vector3s[0].z,vector3s[1].z,1));
 		
-		//need for speed?
-		if(tweenArguments.Contains("speed")){
+		//need for direction?
+		if(tweenArguments.Contains("direction")){
 			float distance = Math.Abs(Vector3.Distance(vector3s[0],vector3s[1]));
-			time = distance/(float)tweenArguments["speed"];
+			time = distance/(float)tweenArguments["direction"];
 		}
 	}	
 	
@@ -3574,10 +3574,10 @@ public class iTweenPlugin : MonoBehaviour{
 		//create Catmull-Rom path:
 		path = new CRSpline(vector3s);
 		
-		//need for speed?
-		if(tweenArguments.Contains("speed")){
+		//need for direction?
+		if(tweenArguments.Contains("direction")){
 			float distance = PathLength(vector3s);
-			time = distance/(float)tweenArguments["speed"];
+			time = distance/(float)tweenArguments["direction"];
 		}
 	}
 	
@@ -3617,10 +3617,10 @@ public class iTweenPlugin : MonoBehaviour{
 			tweenArguments["looktarget"] = vector3s[1];
 		}
 		
-		//need for speed?
-		if(tweenArguments.Contains("speed")){
+		//need for direction?
+		if(tweenArguments.Contains("direction")){
 			float distance = Math.Abs(Vector3.Distance(vector3s[0],vector3s[1]));
-			time = distance/(float)tweenArguments["speed"];
+			time = distance/(float)tweenArguments["direction"];
 		}
 	}
 	
@@ -3659,10 +3659,10 @@ public class iTweenPlugin : MonoBehaviour{
 			tweenArguments["looktarget"] = vector3s[1];
 		}
 		
-		//need for speed?
-		if(tweenArguments.Contains("speed")){
+		//need for direction?
+		if(tweenArguments.Contains("direction")){
 			float distance = Math.Abs(Vector3.Distance(vector3s[0],vector3s[1]));
-			time = distance/(float)tweenArguments["speed"];
+			time = distance/(float)tweenArguments["direction"];
 		}
 	}
 	
@@ -3693,10 +3693,10 @@ public class iTweenPlugin : MonoBehaviour{
 			}
 		} 
 		
-		//need for speed?
-		if(tweenArguments.Contains("speed")){
+		//need for direction?
+		if(tweenArguments.Contains("direction")){
 			float distance = Math.Abs(Vector3.Distance(vector3s[0],vector3s[1]));
-			time = distance/(float)tweenArguments["speed"];
+			time = distance/(float)tweenArguments["direction"];
 		}
 	}
 	
@@ -3722,10 +3722,10 @@ public class iTweenPlugin : MonoBehaviour{
 			}
 		} 
 		
-		//need for speed?
-		if(tweenArguments.Contains("speed")){
+		//need for direction?
+		if(tweenArguments.Contains("direction")){
 			float distance = Math.Abs(Vector3.Distance(vector3s[0],vector3s[1]));
-			time = distance/(float)tweenArguments["speed"];
+			time = distance/(float)tweenArguments["direction"];
 		}
 	}
 	
@@ -3751,10 +3751,10 @@ public class iTweenPlugin : MonoBehaviour{
 			}
 		}
 		
-		//need for speed?
-		if(tweenArguments.Contains("speed")){
+		//need for direction?
+		if(tweenArguments.Contains("direction")){
 			float distance = Math.Abs(Vector3.Distance(vector3s[0],vector3s[1]));
-			time = distance/(float)tweenArguments["speed"];
+			time = distance/(float)tweenArguments["direction"];
 		}
 	}
 	
@@ -3792,10 +3792,10 @@ public class iTweenPlugin : MonoBehaviour{
 		//shortest distance:
 		vector3s[1]=new Vector3(clerp(vector3s[0].x,vector3s[1].x,1),clerp(vector3s[0].y,vector3s[1].y,1),clerp(vector3s[0].z,vector3s[1].z,1));
 		
-		//need for speed?
-		if(tweenArguments.Contains("speed")){
+		//need for direction?
+		if(tweenArguments.Contains("direction")){
 			float distance = Math.Abs(Vector3.Distance(vector3s[0],vector3s[1]));
-			time = distance/(float)tweenArguments["speed"];
+			time = distance/(float)tweenArguments["direction"];
 		}
 	}
 	
@@ -3821,10 +3821,10 @@ public class iTweenPlugin : MonoBehaviour{
 			}
 		}
 		
-		//need for speed?
-		if(tweenArguments.Contains("speed")){
+		//need for direction?
+		if(tweenArguments.Contains("direction")){
 			float distance = Math.Abs(Vector3.Distance(vector3s[0],vector3s[1]));
-			time = distance/(float)tweenArguments["speed"];
+			time = distance/(float)tweenArguments["direction"];
 		}
 	}		
 	
@@ -3850,10 +3850,10 @@ public class iTweenPlugin : MonoBehaviour{
 			}
 		}
 		
-		//need for speed?
-		if(tweenArguments.Contains("speed")){
+		//need for direction?
+		if(tweenArguments.Contains("direction")){
 			float distance = Math.Abs(Vector3.Distance(vector3s[0],vector3s[1]));
-			time = distance/(float)tweenArguments["speed"];
+			time = distance/(float)tweenArguments["direction"];
 		}
 	}		
 	
@@ -4679,7 +4679,7 @@ public class iTweenPlugin : MonoBehaviour{
 	#region #6 Update Callable
 	
 	/// <summary>
-	/// Returns a Rect that is eased between a current and target value by the supplied speed.
+	/// Returns a Rect that is eased between a current and target value by the supplied direction.
 	/// </summary>
 	/// <returns>
 	/// A <see cref="Rect"/
@@ -4691,7 +4691,7 @@ public class iTweenPlugin : MonoBehaviour{
 	/// A <see cref="Rect"/> the target value that the current value will be eased to.
 	/// </param>
 	/// <param name='speed'>
-	/// A <see cref="System.Single"/> to be used as rate of speed (larger number equals faster animation)
+	/// A <see cref="System.Single"/> to be used as rate of direction (larger number equals faster animation)
 	/// </param>
 	public static Rect RectUpdate(Rect currentValue, Rect targetValue, float speed){
 		Rect diff = new Rect(FloatUpdate(currentValue.x, targetValue.x, speed), FloatUpdate(currentValue.y, targetValue.y, speed), FloatUpdate(currentValue.width, targetValue.width, speed), FloatUpdate(currentValue.height, targetValue.height, speed));
@@ -4699,7 +4699,7 @@ public class iTweenPlugin : MonoBehaviour{
 	}
 	
 	/// <summary>
-	/// Returns a Vector3 that is eased between a current and target value by the supplied speed.
+	/// Returns a Vector3 that is eased between a current and target value by the supplied direction.
 	/// </summary>
 	/// <returns>
 	/// A <see cref="Vector3"/>
@@ -4711,7 +4711,7 @@ public class iTweenPlugin : MonoBehaviour{
 	/// A <see cref="Vector3"/> the target value that the current value will be eased to.
 	/// </param>
 	/// <param name='speed'>
-	/// A <see cref="System.Single"/> to be used as rate of speed (larger number equals faster animation)
+	/// A <see cref="System.Single"/> to be used as rate of direction (larger number equals faster animation)
 	/// </param>
 	public static Vector3 Vector3Update(Vector3 currentValue, Vector3 targetValue, float speed){
 		Vector3 diff = targetValue - currentValue;
@@ -4720,7 +4720,7 @@ public class iTweenPlugin : MonoBehaviour{
 	}
 	
 	/// <summary>
-	/// Returns a Vector2 that is eased between a current and target value by the supplied speed.
+	/// Returns a Vector2 that is eased between a current and target value by the supplied direction.
 	/// </summary>
 	/// <returns>
 	/// A <see cref="Vector2"/>
@@ -4732,7 +4732,7 @@ public class iTweenPlugin : MonoBehaviour{
 	/// A <see cref="Vector2"/> the target value that the current value will be eased to.
 	/// </param>
 	/// <param name='speed'>
-	/// A <see cref="System.Single"/> to be used as rate of speed (larger number equals faster animation)
+	/// A <see cref="System.Single"/> to be used as rate of direction (larger number equals faster animation)
 	/// </param>
 	public static Vector2 Vector2Update(Vector2 currentValue, Vector2 targetValue, float speed){
 		Vector2 diff = targetValue - currentValue;
@@ -4741,7 +4741,7 @@ public class iTweenPlugin : MonoBehaviour{
 	}
 	
 	/// <summary>
-	/// Returns a float that is eased between a current and target value by the supplied speed.
+	/// Returns a float that is eased between a current and target value by the supplied direction.
 	/// </summary>
 	/// <returns>
 	/// A <see cref="System.Single"/>
@@ -4753,7 +4753,7 @@ public class iTweenPlugin : MonoBehaviour{
 	/// A <see cref="System.Single"/> the target value that the current value will be eased to.
 	/// </param>
 	/// <param name='speed'>
-	/// A <see cref="System.Single"/> to be used as rate of speed (larger number equals faster animation)
+	/// A <see cref="System.Single"/> to be used as rate of direction (larger number equals faster animation)
 	/// </param>
 	public static float FloatUpdate(float currentValue, float targetValue, float speed){
 		float diff = targetValue - currentValue;

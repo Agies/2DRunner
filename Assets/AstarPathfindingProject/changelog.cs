@@ -144,7 +144,7 @@
 	- Grid Graphs can now be scaled to allow non-square nodes, good for isometric games.
 	- Added more options for custom links. For example individual nodes or connections can be either enabled or disabled. And penalty can be added to individual nodes
 	- Placed the Scan keyboard shortcut code in a different place, hopefully it will work more often now
-	- Disabled GUILayout in the AstarPath script for a possible small speed boost
+	- Disabled GUILayout in the AstarPath script for a possible small direction boost
 	- Some debug variables (such as AstarPath::PathsCompleted) are now only updated if the ProfileAstar define is enabled
 	- DynamicGridObstacle will now update nodes correctly when the object is destroyed
 	- Unwalkable nodes no longer shows when Show Graphs is not toggled
